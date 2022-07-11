@@ -6,3 +6,4 @@ logs
 # file
 db.sqlite
 schema.gql
+yarn.lock

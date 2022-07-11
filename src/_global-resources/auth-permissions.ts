@@ -33,4 +33,24 @@ export class AUTH_PERMISSIONS {
         });
         return str;
     }
+
+    public static makeSuperAdminPermissions(): string {
+        const a = Object.values(AUTH_PERMISSIONS);
+        let permissionString = "";
+        a.forEach(val => {
+            const o = Object.assign({}, val);
+            if ("Code" in o) {
+                const c = o.Code;
+                if ("Permissions" in o) {
+                    const p = o.Permissions;
+                    Object.entries(p).forEach(
+                        ([key, val]) => {
+                            permissionString += AUTH_PERMISSIONS.makePermissionString(c, <string>val) + "/";
+                        });
+                }
+            }
+        });
+        permissionString = permissionString.slice(0, -1);
+        return permissionString;
+    }
 }
