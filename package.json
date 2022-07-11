@@ -1,0 +1,53 @@
+{
+  "name": "node-express-typeorm-graphql-boilerplate",
+  "version": "0.0.1",
+  "description": "A simple boilerplate for node, express, graphql, typeorm, etc",
+  "main": "start.js",
+  "repository": "git@github.com:ah-arabzadeh/node-express-typeorm-graphql-boilerplate.git",
+  "author": {
+    "name": "AmirHossein Arabzadeh",
+    "email": "ah.arabzadeh@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "start": "ts-node-dev src/start.ts"
+  },
+   "dependencies": {
+    "apollo-server-core": "^3.9.0",
+    "apollo-server-express": "^3.9.0",
+    "app-root-path": "^3.0.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "graphql": "^15.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "pino": "^8.0.0",
+    "pino-pretty": "^8.0.0",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.8",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.3.6"
+  },
+  "devDependencies": {
+    "@types/app-root-path": "^1.2.4",
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^28.1.4",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/node": "^17.0.42",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "eslint-plugin-security": "^1.5.0",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.3"
+  }
+}
