@@ -1,0 +1,8 @@
+# dir
+node_modules
+build
+logs
+
+# file
+db.sqlite
+schema.gql
